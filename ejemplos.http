@@ -1,0 +1,10 @@
+POST http://localhost:8080/eventos
+Content-Type: application/json
+
+{"shipment_id":"123","status":"CREADO","event_date":"2026-11-24T10:00:00Z","promised_date":"2026-11-26T18:00:00Z"}
+
+###
+GET http://localhost:8080/envios/123
+
+###
+GET http://localhost:8080/envios/123/historial
